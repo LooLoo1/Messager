@@ -1,15 +1,14 @@
+import { Routing } from "pages";
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import ChatNav from "../components/ChatNav/ChatNav";
-import Chat from "../components/Chat/Chat";
-import SendMesage from "../components/SendMesage/SendMesage";
 
 function App() {
 	return (
-		<div className="chat">
-			<ChatNav />
-			<Chat />
-			<SendMesage />
+		<div className="app">
+			<BrowserRouter>
+				<Routing />
+			</BrowserRouter>
 		</div>
 	);
 }

@@ -1,0 +1,22 @@
+.field {
+	background-color: white;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	padding: 5px 0;
+}
+
+.input {
+	border: none;
+	color: #8a8a8f;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 0 12px;
+	outline: none;
+	overflow: hidden;
+	resize: none;
+}
+.icons {
+	align-items: center;
+	display: flex;
+	margin-left: auto;
+}

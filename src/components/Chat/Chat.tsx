@@ -14,12 +14,7 @@ function Chat() {
 					</div>
 				</div>
 			</div>
-			<div className="message">
-				<p className="text">200</p>
-				<div className="data">
-					<span>20:10pm</span>
-				</div>
-			</div>
+			
 		</div>
 	);
 }
