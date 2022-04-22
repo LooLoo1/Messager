@@ -8,14 +8,14 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #fff;
 }
 
-.chat {
+.app {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	max-width: 100vw;
+	max-width: 400px;
+	margin: 0 auto;
 	background-image: url(../shared/assets/bg.png);
 	background-size: cover;
 	overflow: hidden;
