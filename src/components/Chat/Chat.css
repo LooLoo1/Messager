@@ -1,0 +1,98 @@
+.chat-list {
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+	padding: calc(var(--padding) * 2) calc(var(--padding) * 1.5);
+	max-width: 1080px;
+	width: 100%;
+	margin: auto auto 0;
+
+}
+
+.chat-list> :not(:last-child) {
+	margin-bottom: var(--padding);
+}
+
+.chat-list .message {
+	width: 60%;
+	font-size: 13px;
+	margin-left: var(--padding);
+}
+
+.chat-list .message p {
+	display: inline-block;
+	position: relative;
+	border-radius: var(--padding);
+	border-bottom-left-radius: 0;
+	padding: var(--padding) calc(var(--padding) * 2);
+	margin-bottom: calc(var(--padding) * 0.5);
+	background: rgba(11, 11, 19, 0.25);
+}
+
+.chat-list .message.your {
+	text-align: end;
+	align-self: flex-end;
+	margin: 0;
+	margin-right: var(--padding);
+}
+
+
+.chat-list .message.your p {
+
+	border-radius: var(--padding);
+	border-bottom-right-radius: 0;
+	background: rgba(43, 80, 92, 0.45);
+}
+
+.chat-list .message p::before {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	transform: translateX(-99%);
+
+	width: var(--padding);
+	height: var(--padding);
+
+	background: rgba(11, 11, 19, 0.25);
+	border-radius: 0 0 0 calc(var(--padding) * 0.5);
+	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.chat-list .message.your p::before {
+	transform: translateX(99%);
+	left: auto;
+	right: 0;
+	background: rgba(43, 80, 92, 0.45);
+	border-radius: 0 0 calc(var(--padding) * 0.5) 0;
+	clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.chat-list .message .data span {
+	margin-right: calc(var(--padding) *0.5);
+	font-size: 12px;
+	opacity: 0.75;
+}
+
+.chat-list .message.your .data {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.chat-list .message .data .message-status {
+	display: none;
+}
+
+.chat-list .message.your .data .message-status {
+	display: flex;
+}
+
+.chat-list .message .data .message-status img {
+	width: 14px;
+	height: 14px;
+}
+
+
+.chat-list .message .data .message-status> :not(:first-child) {
+	transform: translateX(-50%);
+}

@@ -1,0 +1,29 @@
+:root {
+	--padding: 10px;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.chat {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-width: 100vw;
+	background-image: url(../shared/assets/bg.png);
+	background-size: cover;
+	overflow: hidden;
+}
+
+.cont {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1080px;
+
+}

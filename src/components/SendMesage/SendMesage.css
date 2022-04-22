@@ -1,0 +1,46 @@
+.send {
+	background: linear-gradient(0deg, #202528, #202528), rgba(34, 28, 32, 0.45);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.send .cont {
+	display: flex;
+	align-items: center;
+	padding: var(--padding) calc(var(--padding) * 1.5);
+
+	width: 100%;
+	min-height: 65px;
+}
+
+.send .cont> :not(:last-child) {
+	margin-right: var(--padding);
+}
+
+.send-message {
+	font-size: 18px;
+	background: none;
+	border: none;
+	outline: none;
+	line-height: 1.4em;
+	height: 1.4em;
+	min-height: 1.4em;
+	max-height: 50vh;
+	resize: vertical;
+
+}
+
+.send-types {
+	display: flex;
+	align-items: center;
+
+	margin-left: auto;
+}
+
+.send-types>:not(:first-child) {
+	margin-left: calc(var(--padding) * 2);
+}
+
+.send-types .item {
+	width: 24px;
+	height: 24px;
+}
